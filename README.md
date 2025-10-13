@@ -50,8 +50,5 @@ EinsteinCoding-Site2025/
 
 ---
 
-## 💡 Contribuição
-1. Faça o fork do repositório.  
-2. Crie uma branch:
-   ```bash
-   git checkout -b feature/nome-da-feature
+## Mapa mental do Projeto
+![Mapa mental do site Einstein Coding 2025](https://github.com/mariatmcosta/EinsteinCoding-Site2025/blob/main/static/imgs/mapa-mental-site.png)
