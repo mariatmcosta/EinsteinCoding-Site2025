@@ -21,6 +21,7 @@ Criar um site institucional funcional e responsivo para apresentar:
 ---
 
 ## 📁 Estrutura do Projeto
+'''
 /EinsteinCoding-Site2025
 ├── app.py
 ├── requirements.txt
@@ -35,3 +36,4 @@ Criar um site institucional funcional e responsivo para apresentar:
 │   │   └── script.js
 │   └── /imgs/
 └── README.md
+'''
