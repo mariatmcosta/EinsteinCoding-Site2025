@@ -20,20 +20,23 @@ Criar um site institucional funcional e responsivo para apresentar:
 
 ---
 
-## 📁 Estrutura do Projeto
-'''
-/EinsteinCoding-Site2025
+## Estrutura do Projeto
+
+```
+EinsteinCoding-Site2025/
+│
 ├── app.py
 ├── requirements.txt
-├── /templates/
-│   ├── base.html
-│   ├── home.html
-│   └── gestao.html
 ├── /static/
 │   ├── /css/
 │   │   └── style.css
 │   ├── /js/
 │   │   └── script.js
 │   └── /imgs/
-└── README.md
-'''
+│       ├── logo.png
+│       └── equipe2025.jpg
+└── /templates/
+    ├── base.html
+    ├── home.html
+    └── gestao.html
+```
