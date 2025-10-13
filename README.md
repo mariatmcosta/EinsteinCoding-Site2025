@@ -40,3 +40,10 @@ EinsteinCoding-Site2025/
     ├── home.html
     └── gestao.html
 ```
+---
+
+## 💡 Contribuição
+1. Faça o fork do repositório.  
+2. Crie uma branch:
+   ```bash
+   git checkout -b feature/nome-da-feature
