@@ -45,7 +45,9 @@ EinsteinCoding-Site2025/
 
 ## Equipe
 **Scrum Master:** Maria Eduarda Taveiros Martins Costa
+
 **Product Owner:** Henrique Machiaveli Martins
+
 **Desenvolvedores:** Ana Beatriz Mamede Pampalon, Antonio Elias Faiçal Junior, Carolina Scilingo, Maria Vitória de Moura Coutinho e Bruna Sanches Paloni
 
 ---
