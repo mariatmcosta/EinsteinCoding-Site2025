@@ -14,7 +14,7 @@ Criar um site institucional funcional e responsivo para apresentar:
 
 ## Tecnologias
 - **Backend:** Python + Flask  
-- **Frontend:** HTML5, CSS3, JavaScript  
+- **Frontend:** HTML, CSS, JavaScript  
 - **Banco de Dados:** SQLite (inicialmente)  
 - **Controle de Versão:** Git + GitHub  
 
