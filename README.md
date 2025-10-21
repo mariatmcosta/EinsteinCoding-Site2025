@@ -55,65 +55,65 @@ EinsteinCoding-Site2025/
 ## Projeto: Site da Entidade Einstein Coding
 
 ```
-arquitetura:
-  modelo: "Cliente-Servidor em 3 camadas"
-  camadas:
+Arquitetura:
+  Modelo: "Cliente-Servidor em 3 camadas"
+  Camadas:
     - Presentation (Frontend): "Interface com o usuário (HTML5, CSS3, JS ou NextJS futuramente)"
     - Application (Backend): "Camada de lógica e comunicação com o banco de dados (Django)"
     - Database: "Camada de armazenamento de dados (PostgreSQL)"
-  justificativa: >
+  Justificativa:
     A arquitetura de três camadas garante modularidade, segurança e
     escalabilidade, permitindo que novas funcionalidades sejam adicionadas
     sem reestruturar o sistema.
 
-frameworks:
-  frontend:
-    nome: "HTML5, CSS3 e JavaScript"
-    opcional_futuro: "NextJS"
-    motivo: >
+Frameworks:
+  Frontend:
+    Nome: "HTML5, CSS3 e JavaScript"
+    Opcional_futuro: "NextJS"
+    Motivo: >
       Fornece uma base simples para o desenvolvimento inicial e permite
       migração futura para frameworks mais robustos, caso necessário.
-  backend:
-    nome: "Django (Python)"
-    motivo: >
+  Backend:
+    Nome: "Django (Python)"
+    Motivo: >
       Framework completo e seguro, com suporte nativo a banco de dados,
       autenticação e escalabilidade.
-  observação: >
+  Observação: >
     O Django foi escolhido por sua robustez e facilidade de integração com o PostgreSQL.
     O Flask foi descartado devido à necessidade de montagem manual de componentes.
 
-banco_de_dados:
-  tipo: "Relacional (SQL)"
-  nome: "PostgreSQL"
-  justificativa: >
+Banco_de_Dados:
+  Tipo: "Relacional (SQL)"
+  Nome: "PostgreSQL"
+  Justificativa: >
     Banco relacional maduro, compatível com Django, ideal para aprendizado
     e projetos escaláveis. Oferece integridade referencial e suporte a consultas complexas.
-  alternativas_consideradas:
+  Alternativas_Consideradas:
     - "MySQL"
-    - "MongoDB (não relacional, mas descartado neste momento)"
-  status: "Escolhido e adotado para o desenvolvimento"
+    - "MongoDB (não relacional, descartado neste momento)"
+  Status: "Escolhido e adotado para o desenvolvimento"
 
-ferramentas:
-  versionamento: "Git + GitHub (Pull Requests, branches e commits controlados)"
-  documentação: "README.md e issues no GitHub"
-  gerenciamento_de_projeto: "GitHub Projects / Scrum (Sprints organizadas)"
-  design_e_planejamento: "Miro (mapas mentais, fluxos e wireframes)"
-  ambiente_de_desenvolvimento: "Visual Studio Code"
-  controle_de_dependências: "pip / virtualenv (Python)"
-  sistema_operacional: "macOS e Windows (configurações padronizadas via requirements.txt)"
+Ferramentas:
+  Versionamento: "Git + GitHub (pull Requests, branches e commits controlados)"
+  Documentação: "README.md e issues no GitHub"
+  Gerenciamento_de_Projeto: "GitHub Projects / Scrum (Sprints organizadas)"
+  Design_e_Planejamento: "Miro (mapas mentais, fluxos e wireframes) e Canva"
+  Ambiente_de_Desenvolvimento: "Visual Studio Code"
+  Controle_de_Dependências: "pip / virtualenv (Python)"
+  Sistema_Operacional: "macOS e Windows (configurações padronizadas via requirements.txt)"
 
-levantamento_de_requisitos:
-  funcionais:
+Levantamento_de_Requisitos:
+  Funcionais:
     - "O sistema deve apresentar informações institucionais sobre o grupo Einstein Coding."
-    - "O sistema deve permitir navegação entre páginas (ex.: Sobre, Projetos, Equipe, Contato)."
-    - "O sistema deve possuir layout responsivo (mobile e desktop)."
+    - "O sistema deve permitir navegação entre páginas."
+    - "O sistema deve possuir layout responsivo."
     - "O sistema deve permitir exibição de imagens e ícones da entidade."
-    - "O sistema deve permitir atualização manual de conteúdos estáticos (textos e imagens)."
+    - "O sistema deve permitir atualização manual de conteúdos estáticos."
     - "O sistema deve permitir integração futura com módulo de login autenticado."
     - "O sistema deve permitir inclusão futura de páginas dinâmicas (projetos, artigos, eventos)."
     - "O sistema deve aceitar expansão para formulários de contato com coleta de dados de visitantes."
 
-  nao_funcionais:
+  Nao_Funcionais:
     - "O sistema deve ser desenvolvido em Django, garantindo modularidade e segurança."
     - "O banco de dados deve ser PostgreSQL, assegurando integridade e compatibilidade com o backend."
     - "O código deve seguir boas práticas de versionamento no GitHub, com commits e revisões via Pull Request."
