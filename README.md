@@ -49,42 +49,45 @@ EinsteinCoding-Site2025/
 ## Mapa mental do Projeto
 ![Mapa mental do site Einstein Coding 2025](https://github.com/mariatmcosta/EinsteinCoding-Site2025/blob/main/static/imgs/mapa-mental-site.png)
 
+---
 
-# Especificações Técnicas do Projeto
-# Projeto: Site da Entidade Einstein Coding
-
+## Especificações Técnicas do Projeto
+## Projeto: Site da Entidade Einstein Coding
 
 Arquitetura:
+
   Modelo: "Cliente-Servidor em 3 camadas"
   Camadas:
     - Presentation (Frontend): "Interface com o usuário (HTML5, CSS3, JS ou NextJS futuramente)"
     - Application (Backend): "Camada de lógica e comunicação com o banco de dados (Django)"
     - Database: "Camada de armazenamento de dados (PostgreSQL)"
-  Justificativa: >
+  Justificativa:
     A arquitetura de três camadas garante modularidade, segurança e
     escalabilidade, permitindo que novas funcionalidades sejam adicionadas
     sem reestruturar o sistema.
 
 Frameworks:
+
   Frontend:
     nome: "HTML5, CSS3 e JavaScript"
     opcional_futuro: "NextJS"
-    motivo: >
+    motivo: 
       Fornece uma base simples para o desenvolvimento inicial e permite
       migração futura para frameworks mais robustos, caso necessário.
   Backend:
     nome: "Django (Python)"
-    motivo: >
+    motivo: 
       Framework completo e seguro, com suporte nativo a banco de dados,
       autenticação e escalabilidade.
-  Observação: >
+  Observação: 
     O Django foi escolhido por sua robustez e facilidade de integração com o PostgreSQL.
     O Flask foi descartado devido à necessidade de montagem manual de componentes.
 
 Banco_de_Dados:
+
   tipo: "Relacional (SQL)"
   nome: "PostgreSQL"
-  justificativa: >
+  justificativa: 
     Banco relacional maduro, compatível com Django, ideal para aprendizado
     e projetos escaláveis. Oferece integridade referencial e suporte a consultas complexas.
   alternativas_consideradas:
@@ -93,6 +96,7 @@ Banco_de_Dados:
   status: "Escolhido e adotado para o desenvolvimento"
 
 Ferramentas:
+
   versionamento: "Git + GitHub (pull Requests, branches e commits controlados)"
   documentação: "README.md e issues no GitHub"
   gerenciamento_de_projeto: "GitHub Projects / Scrum (Sprints organizadas)"
