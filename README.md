@@ -54,56 +54,81 @@ EinsteinCoding-Site2025/
 ## Especificações Técnicas do Projeto
 ## Projeto: Site da Entidade Einstein Coding
 
+
 Arquitetura:
 
   Modelo: "Cliente-Servidor em 3 camadas"
+  
   Camadas:
     - Presentation (Frontend): "Interface com o usuário (HTML5, CSS3, JS ou NextJS futuramente)"
+    
     - Application (Backend): "Camada de lógica e comunicação com o banco de dados (Django)"
+    
     - Database: "Camada de armazenamento de dados (PostgreSQL)"
+    
   Justificativa:
     A arquitetura de três camadas garante modularidade, segurança e
     escalabilidade, permitindo que novas funcionalidades sejam adicionadas
     sem reestruturar o sistema.
 
+
 Frameworks:
 
   Frontend:
+  
     nome: "HTML5, CSS3 e JavaScript"
+    
     opcional_futuro: "NextJS"
+    
     motivo: 
       Fornece uma base simples para o desenvolvimento inicial e permite
       migração futura para frameworks mais robustos, caso necessário.
+      
   Backend:
+  
     nome: "Django (Python)"
+    
     motivo: 
       Framework completo e seguro, com suporte nativo a banco de dados,
       autenticação e escalabilidade.
+      
   Observação: 
     O Django foi escolhido por sua robustez e facilidade de integração com o PostgreSQL.
     O Flask foi descartado devido à necessidade de montagem manual de componentes.
 
+
 Banco_de_Dados:
 
   tipo: "Relacional (SQL)"
+  
   nome: "PostgreSQL"
+  
   justificativa: 
     Banco relacional maduro, compatível com Django, ideal para aprendizado
     e projetos escaláveis. Oferece integridade referencial e suporte a consultas complexas.
+    
   alternativas_consideradas:
     - "MySQL"
     - "MongoDB (não relacional, descartado neste momento)"
   status: "Escolhido e adotado para o desenvolvimento"
 
+
 Ferramentas:
 
   versionamento: "Git + GitHub (pull Requests, branches e commits controlados)"
+  
   documentação: "README.md e issues no GitHub"
+  
   gerenciamento_de_projeto: "GitHub Projects / Scrum (Sprints organizadas)"
+  
   design_e_planejamento: "Miro (mapas mentais, fluxos e wireframes) e Canva"
+  
   ambiente_de_desenvolvimento: "Visual Studio Code"
+  
   controle_de_dependências: "pip / virtualenv (Python)"
+  
   sistema_operacional: "macOS e Windows (configurações padronizadas via requirements.txt)"
+
 
 Levantamento_de_requisitos:
 
@@ -133,7 +158,11 @@ Possibilidades_futuras:
   - "Realizar deploy em serviços de nuvem (AWS, Render, etc.)."
   - "Adicionar blog interno e área logada para membros."
 
+
 Status_atual:
+
   fase: "Levantamento de requisitos e definição de arquitetura, frameworks e layout"
+  
   sprint: "Sprint 1 - Estruturação inicial do repositório e escolha das tecnologias e design"
+  
   proximo_passo: "Iniciar prototipagem e implementação da camada Presentation"
