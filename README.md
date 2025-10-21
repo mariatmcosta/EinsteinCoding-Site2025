@@ -138,6 +138,5 @@ Levantamento_de_Requisitos:
     - "O código deve seguir boas práticas de versionamento no GitHub, com commits e revisões via Pull Request."
     - "O sistema deve manter separação clara entre frontend, backend e banco de dados."
     - "O sistema deve apresentar desempenho estável e tempo de resposta adequado."
-    - "O sistema
 
 ```
