@@ -64,7 +64,9 @@ EinsteinCoding-Site2025/
 ---
 
 ## Mapa mental do Projeto
-![Mapa mental do site Einstein Coding 2025] (https://github.com/mariatmcosta/EinsteinCoding-Site2025/blob/main/frontend/static/imgs/miro.png)
+
+![Mapa mental do site Einstein Coding 2025](https://github.com/mariatmcosta/EinsteinCoding-Site2025/blob/main/frontend/static/imgs/miro.png?raw=true)
+
 
 ---
 
