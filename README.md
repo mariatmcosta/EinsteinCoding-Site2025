@@ -19,20 +19,37 @@ Criar um site institucional funcional e responsivo para apresentar:
 ```
 EinsteinCoding-Site2025/
 │
-├── app.py
+├── /frontend/                    
+│   ├── /templates/             
+│   │   ├── base.html
+│   │   ├── home.html
+│   │   └── gestao.html
+│   └── /static/                  
+│       ├── /css/
+│       │   └── style.css
+│       ├── /js/
+│       │   └── script.js
+│       └── /imgs/
+│           ├── logo.png
+│           └── equipe2025.jpg
+│
+├── /backend/                     
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── views.py
+│   ├── models.py
+│   ├── admin.py
+│   └── apps.py
+│
+├── /database/                    
+│   └── migrations/               
+│       └── __init__.py
+│
+├── manage.py                     
 ├── requirements.txt
-├── /static/
-│   ├── /css/
-│   │   └── style.css
-│   ├── /js/
-│   │   └── script.js
-│   └── /imgs/
-│       ├── logo.png
-│       └── equipe2025.jpg
-└── /templates/
-    ├── base.html
-    ├── home.html
-    └── gestao.html
+└── README.md
+
 ```
 
 ---
