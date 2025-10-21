@@ -54,6 +54,7 @@ EinsteinCoding-Site2025/
 ## Especificações Técnicas do Projeto
 ## Projeto: Site da Entidade Einstein Coding
 
+'''
 arquitetura:
   modelo: "Cliente-Servidor em 3 camadas"
   camadas:
@@ -119,3 +120,4 @@ levantamento_de_requisitos:
     - "O sistema deve manter separação clara entre frontend, backend e banco de dados."
     - "O sistema deve apresentar desempenho estável e tempo de resposta adequado."
     - "O sistema
+'''
