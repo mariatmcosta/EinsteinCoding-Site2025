@@ -70,22 +70,22 @@ Frameworks:
   Frontend:
     Nome: "HTML5, CSS3 e JavaScript"
     Opcional_futuro: "NextJS"
-    Motivo: >
+    Motivo:
       Fornece uma base simples para o desenvolvimento inicial e permite
       migração futura para frameworks mais robustos, caso necessário.
   Backend:
     Nome: "Django (Python)"
-    Motivo: >
+    Motivo:
       Framework completo e seguro, com suporte nativo a banco de dados,
       autenticação e escalabilidade.
-  Observação: >
+  Observação:
     O Django foi escolhido por sua robustez e facilidade de integração com o PostgreSQL.
     O Flask foi descartado devido à necessidade de montagem manual de componentes.
 
 Banco_de_Dados:
   Tipo: "Relacional (SQL)"
   Nome: "PostgreSQL"
-  Justificativa: >
+  Justificativa:
     Banco relacional maduro, compatível com Django, ideal para aprendizado
     e projetos escaláveis. Oferece integridade referencial e suporte a consultas complexas.
   Alternativas_Consideradas:
