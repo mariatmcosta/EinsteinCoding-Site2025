@@ -118,18 +118,4 @@ levantamento_de_requisitos:
     - "O código deve seguir boas práticas de versionamento no GitHub, com commits e revisões via Pull Request."
     - "O sistema deve manter separação clara entre frontend, backend e banco de dados."
     - "O sistema deve apresentar desempenho estável e tempo de resposta adequado."
-    - "O sistema deve ter documentação completa e clara no README.md."
-    - "O sistema deve permitir autenticação segura em versões futuras."
-    - "A arquitetura deve ser escalável e flexível para futuras integrações (APIs e módulos)."
-
-possibilidades_futuras:
-  - "Implementar sistema de login e autenticação de usuários (com tokens)."
-  - "Adicionar painel administrativo para gerenciamento de conteúdo."
-  - "Integrar APIs externas para atualização dinâmica de informações."
-  - "Realizar deploy em serviços de nuvem (AWS, Render, etc.)."
-  - "Adicionar blog interno e área logada para membros."
-
-status_atual:
-  fase: "Levantamento de requisitos e definição de arquitetura"
-  sprint: "Sprint 1 - Estruturação inicial do repositório e escolha das tecnologias"
-  proximo_passo: "Iniciar prototipagem e implementação da camada Presentation"
+    - "O sistema
