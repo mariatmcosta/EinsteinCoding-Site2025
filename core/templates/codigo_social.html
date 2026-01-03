@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Código Social | Einstein Coding</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&family=Teko:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <style>
+    /* 1. O segredo: aplicamos o fundo no HTML e no BODY simultaneamente */
+    html {
+        /* Cor base que combina com o topo da sua imagem fundocs.png */
+        background-color: #a37ccf !important; 
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        /* Usamos 'fixed' para a imagem não se mover com o conteúdo */
+        background-image: url("{% static 'imgs/fundocs.png' %}") !important;
+        background-size: cover !important;
+        background-attachment: fixed !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        
+        /* Força o navegador a não mostrar o "vazio" no topo */
+        overscroll-behavior-y: none;
+    }
+
+    /* 2. Mantém a Navbar limpa e sem o padrão de logos da Home */
+    .navbar {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+
+    /* 3. Estilo do Coração conforme as imagens de referência */
+    .heart-icon {
+        width: 300px;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    /* 4. Suaviza a descida ao clicar em 'Sobre' ou 'Contribuição' */
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <nav class="navbar-links left">
+            <a href="#sobre-projeto">Sobre</a>
+            <a href="#como-contribuir">Como contribuir</a>
+        </nav>
+    
+        <div class="navbar-center">
+            <div class="brand" style="cursor: default;">CÓDIGO<br>SOCIAL</div>
+        </div>
+    
+        <nav class="navbar-links right">
+            <a href="{% url 'home' %}">Einstein Coding</a>
+        </nav>
+    </header>
+    
+
+    <section class="hero" style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="{% static 'imgs/coracao.png' %}" alt="Coração" class="heart-icon">
+        <p style="font-size: 28px; font-weight: 500; text-transform: none;">Transformando o mundo, um código por vez</p>
+    </section>
+
+    <section id="sobre-projeto" class="about">
+        <h2>Sobre o Projeto</h2>
+        <p class="intro-text">
+            É o braço social do Einstein Coding, voltado ao ensino de programação 
+            para pessoas em situação de vulnerabilidade, com o objetivo de promover inclusão e gerar 
+            novas oportunidades profissionais. 
+        </p>
+
+        <div class="about-columns">
+            <div>
+                <h3>Missão</h3>
+                <p>Oferecer educação tecnológica de qualidade para quem mais precisa, 
+                reduzindo o abismo digital na nossa sociedade. Em uma parceria com o Ensino EINSTEIN, 
+                serão ministradas aulas de programação para alunos do ensino médio técnico (ETIM) 
+                da instituição.</p>
+            </div>
+
+            <div>
+                <h3>Visão</h3>
+                <p>Ser um projeto modelo de ensino voluntário de programação, 
+                formando jovens capazes de criar suas próprias soluções.</p>
+            </div>
+
+            <div>
+                <h3>Valores</h3>
+                <ul>
+                    <li>Empatia</li>
+                    <li>Inclusão</li>
+                    <li>Educação</li>
+                    <li>Voluntariado</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="como-contribuir" class="about" style="padding-top: 0;">
+        <div class="about-columns" style="grid-template-columns: 1fr;">
+            <div>
+                <h3>Contribuição</h3>
+                <p>Seja um professor! Exclusivo para alunos da FICSAE.
+                   Link de inscrição aberto somente durante os períodos de seleção.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Einstein Coding</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/einstein_coding" target="_blank"><img src="{% static 'imgs/instagram.svg' %}" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/company/einsteincoding/" target="_blank"><img src="{% static 'imgs/linkedin.svg' %}" alt="LinkedIn"></a>
+        </div>
+        <p>Endereço: Av. Prof. Francisco Morato, 4293 - Butantã, São Paulo - SP, 05521-100</p>
+    </footer>    
+
+</body>
+</html>

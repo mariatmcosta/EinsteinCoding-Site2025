@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ news.title }} | Einstein Coding</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="navbar-logo">
+        <a href="/">Einstein Coding</a>
+    </div>
+</header>
+
+<section style="padding: 80px 60px; background-color: white; color: #333;">
+    <h1>{{ news.title }}</h1>
+
+    <p style="opacity: 0.6; margin: 10px 0 30px;">
+        Publicado em {{ news.created_at|date:"d/m/Y" }}
+    </p>
+
+    {% if news.image %}
+        <img 
+            src="{{ news.image.url }}" 
+            alt="{{ news.title }}"
+            style="max-width: 100%; border-radius: 12px; margin-bottom: 30px;"
+        >
+    {% endif %}
+
+    <p style="font-size: 18px; line-height: 1.6;">
+        {{ news.content }}
+    </p>
+</section>
+
+</body>
+</html>

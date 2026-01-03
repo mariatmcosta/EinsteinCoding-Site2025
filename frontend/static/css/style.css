@@ -1,0 +1,305 @@
+/* =========================
+   RESET GLOBAL
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* =========================
+    BODY
+========================= */
+body {
+    /* Fonte principal (Texto corrido) -> Rajdhani */
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500; /* Rajdhani fica melhor um pouco mais grossa */
+    font-size: 18px;  /* Aumentei levemente pois Rajdhani é compacta */
+    color: white;
+    line-height: 1.6;
+
+    background-color: #6a1b9a;
+    background-image: url("../imgs/logo-pattern.png"); 
+    background-repeat: repeat;
+    background-size: 180px; 
+}
+
+/* =========================
+    NAVBAR
+========================= */
+.navbar {
+    /* Relative para sumir ao dar scroll */
+    position: relative;
+    z-index: 100;
+
+    background-color: transparent;
+    background-image: url("../imgs/background-pattern.png");
+    background-repeat: repeat;
+    background-size: 180px;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    padding: 25px 40px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 45px;
+}
+
+.navbar-links.left {
+    justify-content: flex-start;
+}
+
+.navbar-links.right {
+    justify-content: flex-end;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    font-size: 22px; /* Fonte dos links maior */
+    letter-spacing: 2px; /* Mais espaço entre as letras */
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #d1c4e9; /* Efeito leve ao passar o mouse */
+}
+
+.navbar-center {
+    text-align: center;
+}
+
+.navbar-center .brand {
+    color: white;
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    font-size: 34px; /* Aumentei levemente o logo central */
+    line-height: 0.85; /* Ajuste para as duas linhas ficarem próximas e elegantes */
+    letter-spacing: 3px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* =========================
+    HERO / TOPO
+========================= */
+.hero {
+    height: 90vh;
+    background-color: transparent; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+.hero h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 90px; /* Teko é condensada, pode abusar do tamanho */
+    font-weight: 600;
+    line-height: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+  
+.hero p {
+    font-size: 24px; /* Rajdhani precisa ser um pouco maior */
+    margin-top: 10px;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+/* =========================
+    SEÇÕES
+========================= */
+section {
+    padding: 80px 60px;
+}
+  
+/* =========================
+    TÍTULOS GERAIS
+========================= */
+section h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 52px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+  
+/* =========================
+    GRID DE NOTÍCIAS
+========================= */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.breaking-news,
+.latest-news {
+    background-color: transparent;
+}
+  
+/* =========================
+    CARD DE NOTÍCIA
+========================= */
+.news-card {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 8px; /* Bordas menos arredondadas combinam mais com Teko */
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+  
+.news-card:hover {
+    transform: translateY(-8px);
+}
+  
+.news-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+  
+.news-card h3,
+.news-card h4 {
+    font-family: 'Teko', sans-serif;
+    font-size: 32px; /* Títulos maiores */
+    margin: 20px 20px 5px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+  
+.news-card p {
+    font-size: 18px; /* Texto legível */
+    margin: 0 20px 20px;
+    line-height: 1.4;
+}
+  
+.read-more {
+    margin: 0 20px 24px;
+    text-decoration: none;
+    color: #6a1b9a;
+    
+    font-family: 'Teko', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+    align-self: flex-start;
+}
+  
+.news-card:not(:has(img)) {
+    padding-top: 10px;
+}
+  
+/* =========================
+    SOBRE NÓS
+========================= */
+.about {
+    background-color: transparent;
+}
+
+/* Destaque para o texto introdutório do Sobre Nós */
+.intro-text {
+    font-size: 20px;
+    max-width: 900px;
+    margin-bottom: 30px;
+}
+  
+.about-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+}
+  
+.about h3 {
+    font-family: 'Teko', sans-serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+  
+/* =========================
+    FOOTER
+========================= */
+.footer {
+    background-color: transparent;
+    text-align: center;
+    padding: 30px;
+    font-size: 16px;
+    opacity: 0.95;
+}
+  
+/* =========================
+    RESPONSIVO
+========================= */
+@media (max-width: 900px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+  
+    .about-columns {
+        grid-template-columns: 1fr;
+    }
+  
+    .hero h1 {
+        font-size: 60px;
+    }
+  
+    section {
+        padding: 60px 30px;
+    }
+}
+
+/* =========================
+    REDES SOCIAIS
+========================= */
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a img {
+    width: 28px;
+    height: 28px;
+    opacity: 0.85;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+/* =========================
+    IMAGEM BREAKING NEWS
+========================= */
+.breaking-title {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center; 
+}
+
+.breaking-title img {
+    max-width: 320px; 
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Einstein Coding</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&family=Teko:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <nav class="navbar-links left">
+            <a href="#sobre-nos">Sobre nós</a>
+            <a href="/codigo-social/">Código Social</a>
+            <a href="/projetos/">Nossos Projetos</a>
+        </nav>
+    
+        <div class="navbar-center">
+            <a href="#top" class="brand">EINSTEIN<br>CODING</a>
+        </div>
+    
+        <nav class="navbar-links right">
+            <a href="/noticias/">Notícias</a>
+            <a href="/gestoes/">Gestão</a>
+        </nav>
+    </header>
+    
+
+    <section id="top" class="hero">
+        <h1>Einstein Coding</h1>
+        <p>Onde o código encontra o cuidado</p>
+    </section>
+
+    <section id="sobre-nos" class="about">
+        <h2>Sobre Nós</h2>
+
+        <p class="intro-text">
+            O Einstein Coding é uma entidade estudantil criada por alunos da Engenharia 
+            Biomédica da FICSAE. Nos dedicamos ao desenvolvimento
+            de soluções tecnológicas e de programação aplicadas à área da saúde,
+            unindo inovação, impacto social e aprendizado contínuo.
+            Somos uma comunidade que acredita no poder do código para transformar realidades.
+        </p>
+
+        <div class="about-columns">
+            <div>
+                <h3>Missão</h3>
+                <p>Nossa missão é transformar vidas por meio da programação.</p>
+                <p>Trabalhamos em duas frentes:</p>
+                <p>1. Einstein Coding: Espaço de prática e aprendizado de programação avançada;</p>
+                <p>2. Código Social: projeto voluntário que oferece aulas de programação para jovens 
+                    em situação de vulnerabilidade.</p>
+                <p>Transformamos realidades por meio de código que gera impacto social!</p>
+            </div>
+
+            <div>
+                <h3>Visão</h3>
+                <p>
+                    Ser referência em desenvolvimento tecnológico estudantil voltado à saúde,
+                    formando profissionais capacitados e comprometidos com a sociedade.
+                </p>
+            </div>
+
+            <div>
+                <h3>Valores</h3>
+                <ul>
+                    <li>Inovação</li>
+                    <li>Impacto social</li>
+                    <li>Colaboração</li>
+                    <li>Ética</li>
+                    <li>Aprendizado contínuo</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="breaking-news">
+        <div class="breaking-title">
+            <img src="{% static 'imgs/breakingnews.png' %}" alt="Breaking News">
+        </div>
+        
+
+        <div class="news-grid">
+            {% for news in featured_news %}
+                <div class="news-card">
+                    {% if news.image %}
+                        <img src="{{ news.image.url }}" alt="{{ news.title }}">
+                    {% endif %}
+
+                    <h3>{{ news.title }}</h3>
+                    <p>{{ news.summary }}</p>
+
+                    <a href="/noticias/{{ news.id }}/" class="read-more">
+                        Ler mais
+                    </a>
+                </div>
+            {% empty %}
+                <p>Nenhuma notícia em destaque no momento.</p>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="latest-news">
+        <h2>Outras Atualizações</h2>
+
+        <div class="news-grid">
+            {% for news in latest_news %}
+                <div class="news-card small">
+                    <h4>{{ news.title }}</h4>
+                    <p>{{ news.summary|truncatechars:120 }}</p>
+
+                    <a href="/noticias/{{ news.id }}/" class="read-more">
+                        Ler mais
+                    </a>
+                </div>
+            {% empty %}
+                <p>Nenhuma notícia disponível.</p>
+            {% endfor %}
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Einstein Coding</p>
+    
+        <div class="social-links">
+            <a href="https://www.instagram.com/einstein_coding" target="_blank" aria-label="Instagram">
+                <img src="{% static 'imgs/instagram.svg' %}" alt="Instagram">
+            </a>
+    
+            <a href="https://www.linkedin.com/company/einsteincoding/posts/?feedView=all" target="_blank" aria-label="LinkedIn">
+                <img src="{% static 'imgs/linkedin.svg' %}" alt="LinkedIn">
+            </a>
+        </div>
+
+        <p>Endereço: Av. Prof. Francisco Morato, 4293 - Butantã, São Paulo - SP, 05521-100</p>
+    </footer>    
+
+</body>
+</html>
