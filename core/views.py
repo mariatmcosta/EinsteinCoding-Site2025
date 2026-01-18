@@ -21,3 +21,6 @@ def news_detail(request, id):
 
 def codigo_social(request):
     return render(request, 'codigo_social.html')
+
+def gestao(request):
+    return render(request, "gestao.html")
