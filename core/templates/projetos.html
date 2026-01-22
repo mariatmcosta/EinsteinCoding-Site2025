@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos | Healthtech Junior Einstein</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&family=Teko:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/projetos.css' %}">
+</head>
+
+<body>
+    <header class="navbar">
+        <nav class="navbar-links.left">
+            <a href="#sobre-nos">Sobre nós</a>
+            <a href="/codigo-social/">Código Social</a>
+            <a href="/home/">Página Inicial</a>
+        </nav>
+    
+        <div class="navbar-center">
+            <a href="#top" class="brand">NOSSOS<br>PROJETOS</a>
+        </div>
+        
+        <nav class="navbar-links.right">
+            <a href="/noticias/">Notícias</a>
+            <a href="/gestoes/">Gestão</a>
+        </nav>
+    </header>
+    
+    <section class="proj">
+        <h2>Últimos Projetos</h2>
+
+        <div class="proj-columns">
+            <div>
+                <h3>Site do Healthtech Junior Einstein</h3>
+                <a href="#site-HJE">Ler mais sobre</a>
+                <h3>Site da Atlética</h3>
+                <a href="#site-AALVD">Ler mais sobre</a>
+                <h3>Site do Centro Acadêmico</h3>
+                <a href="#site-CA">Ler mais sobre</a>  
+                <h3>Aplicativo para Saúde Mental</h3>
+                <a href="#app-saude-mental">Ler mais sobre</a>
+                <h3>Aplicativo para Escovação Dental</h3>
+                <a href="#app-escovacao-dental">Ler mais sobre</a>
+                <h3>Calculadora de Notas</h3>
+                <a href="#calculadora-notas">Ler mais sobre</a>
+
+                <!--A ideia no "ler mais sobre" é fazer com que o visitante leia o seguinte texto: 
+                "O projeto liderado por <nome> e executado por <nome01, nome02, ... ,nome0n> tem por objetivo <objetivo>."
+                Acesse o projeto em: <link do projeto>-->
+            </div>
+            
+            <button>Mais projetos</button>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Healthtech Junior Einstein</p>
+        <p>Endereço: Av. Prof. Francisco Morato, 4293 - Butantã, São Paulo - SP, 05521-100</p>
+    </footer>    
+
+</body>
+</html>
